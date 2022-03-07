@@ -8,10 +8,13 @@ namespace TicTac
 {
     internal class Program
     {
+        
         static void Main(string[] args)
         {
+            
             Console.WriteLine("Welcome to the TicTocToe Game");
             TicTacToeGame.Board();
+            TicTacToeGame.Input();
             Console.ReadKey();
         }
     }
