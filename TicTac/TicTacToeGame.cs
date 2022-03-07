@@ -14,9 +14,9 @@ namespace TicTac
         public static void Board()
         {
             Console.WriteLine("     |     |      ");
-           
+
             Console.WriteLine("     |     |      ");
-          
+
             Console.WriteLine("     |     |      ");
         }
 
@@ -30,6 +30,22 @@ namespace TicTac
             else
             {
                 Console.WriteLine("Player 1 Chance");
+            }
+            Console.WriteLine("\n");
+
+            choice = int.Parse(Console.ReadLine());
+            if (arr[choice] != 'X' && arr[choice] != 'O')
+            {
+                if (player % 2 == 0)
+                {
+                    arr[choice] = 'O';
+                    player++;
+                }
+                else
+                {
+                    arr[choice] = 'X';
+                    player++;
+                }
             }
         }
     }
